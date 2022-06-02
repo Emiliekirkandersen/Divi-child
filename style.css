@@ -1,0 +1,105 @@
+/*
+Theme Name: Divi Child
+Theme URI: http://www.elegantthemes.com/gallery/divi/
+Template: Divi
+Author: Elegant Themes
+Author URI: http://www.elegantthemes.com
+Description: Smart. Flexible. Beautiful. Divi is the most powerful theme in our collection.
+Version: 4.14.8.1652122802
+Updated: 2022-05-09 21:01:06
+
+*/
+
+/* ----------- FJERN SIDEBAR ------------ */
+/* Remove sidebar */
+#sidebar {
+  display: none;
+}
+
+/* Remove thin line */
+#main-content .container:before {
+  background: none;
+}
+
+/* Make content 100% width */
+@media (min-width: 981px) {
+  #left-area {
+    width: 100%;
+    padding-right: 0px !important;
+  }
+}
+
+/* ---------- KNAP TIL TOPPEN ------------- */
+.et_pb_scroll_top.et-pb-icon {
+  right: 30px;
+  bottom: 30px;
+  padding: 8px;
+  border-radius: 30px;
+  background: #ff8c39;
+  font-size: 32px;
+  transition: all 0.1s ease-in-out;
+}
+
+.et_pb_scroll_top.et-pb-icon:hover {
+  bottom: 32px;
+  background: #faa465;
+  transition: all 0.1s ease-in-out;
+  box-shadow: 0 5px 10px #8173524a;
+}
+
+.et_pb_scroll_top.et-visible {
+  -webkit-animation: fadeInBottom 1s 1 cubic-bezier(0.5, 0, 0.16, 1);
+  -moz-animation: fadeInBottom 2s 1 cubic-bezier(0.5, 0, 0.16, 1);
+  -o-animation: fadeInBottom 1s 1 cubic-bezier(0.5, 0, 0.16, 1);
+  animation: fadeInBottom 1s 1 cubic-bezier(0.5, 0, 0.16, 1);
+}
+.et_pb_scroll_top.et-hidden {
+  opacity: 0;
+  -webkit-animation: fadeOutBottom 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-animation: fadeOutBottom 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
+  -o-animation: fadeOutBottom 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
+  animation: fadeOutBottom 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/* ------------- KNAPPER/OVERSKRIFTER I SHOP ------------ */
+.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-needed,
+.et_pb_searchsubmit,
+.single_add_to_cart_button.button.alt,
+.woocommerce-mini-cart__buttons.buttons,
+.et_pb_title_container,
+#coupon_code,
+.button,
+.cart_totals h2,
+.shop_table.shop_table_responsive.cart.woocommerce-cart-form__contents,
+.shop_table.shop_table_responsive,
+.et_pb_section.et_pb_section_0.et_section_regular {
+  text-transform: lowercase !important;
+}
+
+/* ----------- FJERN TEKST VED TILFØJ HILSEN PÅ PRODUKTSIDE ------- */
+.logged-in-as {
+  display: none;
+}
+
+/* ----------- FJERN LOWERCASE PÅ TEKST INSP-SIDEN --------- */
+.et_pb_module.et_pb_text.et_pb_text_1.et_pb_text_align_left.et_pb_bg_layout_light
+  .et_pb_text_inner
+  p {
+  text-transform: none;
+}
+
+/* ---------- FJERN LOWERCASE PÅ TEKST PÅ INDPAKNINGS-SIDEN -------- */
+.et_pb_module.et_pb_text.et_pb_text_1.et_pb_text_align_center.et_pb_bg_layout_light
+  .et_pb_text_inner
+  p {
+  text-transform: none;
+}
+
+/* ------------ TILFØJ HILSEN  ---------- */
+.wapf-field-label.wapf--above {
+  font-weight: bold;
+}
+
+.wapf-field-container {
+  padding: 0 5px 40px 5px;
+}
